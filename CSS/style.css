@@ -1,0 +1,140 @@
+
+/* Importa a Fonte do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap'); */
+
+/* Variáveis: espaço reservado na memória para guardar valores */
+:root {
+
+    /* Template de cores */
+    --cor01: #ffffff;
+    --cor02: #f9f9f9;
+    --cor03: #dddddd;
+    --cor04: #999999;
+    --cor05: #757575;
+    --cor06: #232323;
+    
+    --cor10: #9684ff;
+
+    /* Sombra */
+    --sombra: 0 3px 5px #000000b9;
+}
+
+/* Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Verdana, sans-serif;
+    font-size: 1rem;
+    scroll-behavior: smooth;
+}
+
+/* Barra de Navegação */
+
+nav {
+    position: fixed; /*Ficar fixado no topo enquanto mexe o scroll*/
+    width: 100%; /* Se não por os 100% ele so vai ter nav até onde tem conteudo (não pegaria a tela toda)*/
+    top: 0;
+    background-color: #232323c3; /*c3 deixa a nav um pouco transparente*/
+    color: var(--cor02);
+    padding: 1rem 2.5rem;
+    display: flex;
+    justify-content: space-between;
+
+    span {
+        color: blueviolet;
+    }
+
+    /* Nested (Alinhado) */
+
+    ul {
+        display: flex;
+        list-style: none;
+        gap: 1rem;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        padding: 1rem;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        color: blueviolet;
+    }
+}
+
+/* Header */
+
+header {
+    background-image: url("https://cdn.pixabay.com/photo/2016/02/01/00/56/news-1172463_1280.jpg");
+    background-size: cover;
+    /* background-position: center; */
+
+    /* height: 320px; */
+    height: 60vh; /*60% da viewport*/
+}
+
+/* Corpo(Main) */
+
+main {
+    background-color: burlywood;
+    padding: 2rem 4rem;
+}
+
+/* Section - Assuntos */
+section {
+    padding-top: 3.7rem;
+    padding-bottom: 3.7rem;
+    min-height: 100vh;
+
+}
+
+/* Article - Notícias */
+article {
+    margin-top: 1rem;
+    background-color: var(--cor02);
+    display: flex;
+    height: 16rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    
+
+    img {
+        height: 100%;
+        
+    }
+
+    div {
+        padding: 0.8rem;
+
+        p {
+            margin: 1rem 0;
+        }
+
+        .leia-mais {
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+}
+
+/* Rodapé */
+
+footer {
+    background-color: var(--cor06);
+    color: var(--cor03);
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
