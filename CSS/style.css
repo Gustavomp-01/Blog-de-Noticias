@@ -138,3 +138,17 @@ footer {
     width: 100%;
 
 }
+
+/*  Responsividade */
+
+/* Extra Small (XS) - Smartphone (Portait) - Celular em pé  */
+@media (max-width: 576px) {
+    nav{
+        background-color: #ff516e;
+    }
+}
+/* Small (S) - Smartphone  (Landscape) - Celular em deitado  */
+/* Medium (M) - Tablet  */
+/* Notebook */
+/* Desktop */
+
